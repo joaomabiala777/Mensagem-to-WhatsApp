@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Contact Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>
+                <i class="fab fa-whatsapp whatsapp-icon"></i>
+                Entre em Contato
+            </h1>
+            <p>Envie sua mensagem diretamente para meu WhatsApp</p>
+        </div>
+        
+        <form class="contact-form" id="whatsappForm">
+            <div class="form-group">
+                <label class="input-label required">Nome Completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="input-label required">E-mail</label>
+                <input type="email" id="email" placeholder="seu.email@exemplo.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="input-label">Celular</label>
+                <input type="tel" id="telefone" placeholder="+244 999 999 999">
+            </div>
+            
+            <div class="form-group">
+                <label class="input-label required">Mensagem</label>
+                <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+            
+            <div class="btn-enviar">
+                <button type="submit" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    ENVIAR PARA WHATSAPP
+                </button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

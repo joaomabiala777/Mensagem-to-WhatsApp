@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact-header {
+  background-color: #25d366;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-header p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.contact-form {
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #25d366;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.2);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn-enviar {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-icon {
+  font-size: 22px;
+}
+
+.form-note {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.form-note strong {
+  color: #25d366;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.required::after {
+  content: " *";
+  color: #e74c3c;
+}
+
+.config-info {
+  background-color: #f0f8ff;
+  border-left: 4px solid #25d366;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 30px 25px;
+  }
+
+  .contact-header {
+    padding: 25px 20px;
+  }
+
+  .contact-header h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  .btn-whatsapp {
+    padding: 16px 30px;
+    font-size: 16px;
+  }
+}
